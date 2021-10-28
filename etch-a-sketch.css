@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start
+    height: 100%;
+}
+
+
+#container {
+display: flex;
+height: 100vh;
+background-color:white;
+justify-content: space-around;
+align-items: center;
+justify-content: center;
+}
+
+
+.board {
+display: grid;
+width: 800px;
+height:800px;
+border-bottom: 1px solid grey; 
+border-right: 1px solid grey;
+margin-bottom: 100px;
+}
+
+.content {
+background-color: bisque;
+width: 500px;
+height: 500px;
+justify-self: flex-start;
+margin-left: -300px;
+}
+
+.button{
+    align-self: center;
+    margin-top: 50px;
+}
+
