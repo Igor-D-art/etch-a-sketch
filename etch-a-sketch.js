@@ -43,16 +43,16 @@ function clearGrid () {
   };
 };
 
-// sets the new grid after the user's input
+// sets the new grid after the user's input. Uses clearGrid function as a callback
 
 function setGrid (){
+  clearGrid();
+
   gridSize = Math.pow(boardSideInput, 2);  
 
   boardWidth = board.style.gridTemplateColumns = `repeat(${boardSideInput}, 1fr)`;
   boardHeight = board.style.gridTemplateRows = `repeat(${boardSideInput}, 1fr)`;
   
-  clearGrid();
-
   for (i=0; i<gridSize; i++){
    let cell = document.createElement('div');
    cell.setAttribute('class', 'cell');
